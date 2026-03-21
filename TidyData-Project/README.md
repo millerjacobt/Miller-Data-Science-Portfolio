@@ -37,9 +37,9 @@ conda install pandas matplotlib
 This dataset includes the medal winners from the 2008 Summer Olympics. It includes name, medal, sport/event, and gender. It is coded in a wide format, so it needed significant transformations to be more readable, tidy data.
 
 ## Resources 
-For further information on Pandas and tidy data as a concept, please refer to [Pandas Cheat Sheet] (https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf) and [The Tidy Data Paper] (https://vita.had.co.nz/papers/tidy-data.pdf)
+For further information on Pandas and tidy data as a concept, please refer to [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf) and [The Tidy Data Paper](https://vita.had.co.nz/papers/tidy-data.pdf)
 
 ## Visualizations 
 In my analysis, I created some simple visualizations from the limited sets of variables available. My favorite was my bar graph showing the distribution of medals by sport and gender, shown below:
 
-[Medal Distribution by Sport and Gender] ('/Users/work/Documents/GitHub/Miller-Data-Science-Portfolio/Images/Gender Distribution by Sport.png')
+[Medal Distribution by Sport and Gender]('/Users/work/Documents/GitHub/Miller-Data-Science-Portfolio/Images/Gender Distribution by Sport.png')
