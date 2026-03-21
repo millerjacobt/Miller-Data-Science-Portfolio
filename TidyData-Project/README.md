@@ -42,4 +42,4 @@ For further information on Pandas and tidy data as a concept, please refer to [P
 ## Visualizations 
 In my analysis, I created some simple visualizations from the limited sets of variables available. My favorite was my bar graph showing the distribution of medals by sport and gender, shown below:
 
-![Medal Distribution by Sport and Gender](Images/Gender_Distribution_by_Sport.png)
+![Medal Distribution by Sport and Gender](Images/Gender Distribution by Sport.png)
