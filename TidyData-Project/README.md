@@ -26,6 +26,7 @@ You can install them with:
 
 ```bash
 conda install pandas matplotlib 
+```
 
 ### 2. Running the Notebook
 - Download the 'tidy_data.ipynb' notebook and 'olympics_08_medalists.csv' dataset
