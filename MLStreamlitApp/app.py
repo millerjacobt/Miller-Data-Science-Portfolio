@@ -93,6 +93,13 @@ fill_method = st.sidebar.radio(
     ["Median", "Mean"]
 )
 
+# Display a preview of the loaded dataset and report its shape (number of rows and columns) after preprocessing.
+if df is not None:
+    df = preprocess_data(df, missing_threshold, fill_method)  # Preprocess the data with the function define on lines 25-46
+    st.subheader("Dataset Preview")
+    st.write(f"Shape: {df.shape[0]} rows, {df.shape[1]} columns")
+    st.dataframe(df.head(10))
+
 # Prompt users to select the target and feature variables
 if df is not None:
     st.sidebar.header("3. Select Target Variable")
@@ -108,12 +115,6 @@ if df is not None:
         [col for col in df.columns if col != target_variable]
     )
 
-# Display a preview of the loaded dataset and report its shape (number of rows and columns) after preprocessing.
-if df is not None:
-    df = preprocess_data(df, missing_threshold, fill_method)  # Preprocess the data with the function define on lines 25-46
-    st.subheader("Dataset Preview")
-    st.write(f"Shape: {df.shape[0]} rows, {df.shape[1]} columns")
-    st.dataframe(df.head(10))
 
 # Display hyperparemeter model controls below the dataset preview. These controls will allow users to adjust the parameters of the Decision Tree and KNN models.
 if df is not None and len(feature_variables) >= 2:
