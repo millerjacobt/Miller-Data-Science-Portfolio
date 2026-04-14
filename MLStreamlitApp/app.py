@@ -13,7 +13,7 @@ import seaborn as sns
 st.set_page_config(page_title="Branches or Neighborhoods: An Interactive Supervised ML App", layout="wide")
 
 st.title("Branches or Neighborhoods: An Interactive Supervised ML App")
-st.write("Upload your own dataset or explore one of three sample datasets, tune the hyperparameters, and compare how a Decision Tree and K-Nearest Neighbors classifier perform side-by-side. Which model fits your data better — branches or neighborhoods?")
+st.write("Upload your own dataset or explore one of three sample datasets, tune the hyperparameters, and compare how a Decision Tree and K-Nearest Neighbors classifier perform side-by-side. Which model fits your data better: branches or neighborhoods?")
 
 # Create a function to preprocess the future data: Encode categorical values, handle missing values, and drop variables with high cardinality (variables with more than 20 unique values)
 def preprocess_data(df, missing_threshold, fill_method):
