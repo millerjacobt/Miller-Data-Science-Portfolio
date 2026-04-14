@@ -66,7 +66,8 @@ else:
         ["BRFSS Diabetes Indicators", "Breast Cancer", "Titanic"]
     )
     if sample_choice == "BRFSS Diabetes Indicators":
-        df = pd.read_csv("data/diabetes_binary_5050split_health_indicators_BRFSS2015.csv")
+        import os
+        df = pd.read_csv(os.path.join(os.path.dirname(__file__), "data", "diabetes_binary_5050split_health_indicators_BRFSS2015.csv"))
         df = df.sample(n=5000, random_state=42) # Sample for faster processing
     elif sample_choice == "Breast Cancer":
         from sklearn.datasets import load_breast_cancer
