@@ -24,7 +24,7 @@ df = pd.read_csv(BASE_DIR / "data" / "vdem_subset.csv")
 # Sidebar controls
 st.sidebar.markdown("## Filters")
 
-country = st.sidebar.multiselect(
+countries = st.sidebar.multiselect(
     "Select countries",
     sorted(df["country_name"].unique()),
     default=["United States of America"]
@@ -39,7 +39,7 @@ year_range = st.sidebar.slider(
 
 # Filter data
 filtered_df = df[
-    (df["country_name"].isin(countries) &
+    (df["country_name"].isin(countries)) &
     (df["year"] >= year_range[0]) &
     (df["year"] <= year_range[1])
 ]
@@ -67,12 +67,12 @@ table_columns = ["country_name"] + indices
 # Plot each index with description attached
 if not countries:
     st.warning("Please select at least one country.")
-else
+else:
     for idx in indices:
-    st.markdown(f"### {idx}")
-    st.markdown(index_descriptions[idx])
-    chart.df = filtered_df.pivot(index="year", columns="country_name", values=idx)
-    st.line_chart(chart_df)
+        st.markdown(f"### {idx}")
+        st.markdown(index_descriptions[idx])
+        chart_df = filtered_df.pivot(index="year", columns="country_name", values=idx)
+        st.line_chart(chart_df)
     
 
 # Show data table
