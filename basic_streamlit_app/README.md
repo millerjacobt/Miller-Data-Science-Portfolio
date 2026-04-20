@@ -1,6 +1,6 @@
 # V-DEM Core Indices Visualization Tool 
 
-An interactive Streamlit dashboard for exploring democracy data from the [Varieties of Democracy (V-Dem) Dataset](https://www.v-dem.net/). Users can select a country and time range of interest to visualize five core democracy indicies as line graphs with descriptions of each index displeayed above its plot.
+An interactive Streamlit dashboard for exploring democracy data from the [Varieties of Democracy (V-Dem) Dataset](https://www.v-dem.net/). Users can select a country and time range of interest to visualize five core democracy indicies as line graphs with descriptions of each index displayed above its plot.
 
 ## Features
 
