@@ -24,9 +24,10 @@ df = pd.read_csv(BASE_DIR / "data" / "vdem_subset.csv")
 # Sidebar controls
 st.sidebar.markdown("## Filters")
 
-country = st.sidebar.selectbox(
-    "Select a country",
-    sorted(df["country_name"].unique())
+country = st.sidebar.multiselect(
+    "Select countries",
+    sorted(df["country_name"].unique()),
+    default=["United States of America"]
 )
 
 year_range = st.sidebar.slider(
@@ -38,10 +39,10 @@ year_range = st.sidebar.slider(
 
 # Filter data
 filtered_df = df[
-    (df["country_name"] == country) &
+    (df["country_name"].isin(countries) &
     (df["year"] >= year_range[0]) &
     (df["year"] <= year_range[1])
-].set_index("year")
+]
 
 # Select the 5 indices
 indices = [
@@ -64,11 +65,16 @@ index_descriptions = {
 table_columns = ["country_name"] + indices
 
 # Plot each index with description attached
-for idx in indices:
+if not countries:
+    st.warning("Please select at least one country.")
+else
+    for idx in indices:
     st.markdown(f"### {idx}")
     st.markdown(index_descriptions[idx])
-    st.line_chart(filtered_df[[idx]])
+    chart.df = filtered_df.pivot(index="year", columns="country_name", values=idx)
+    st.line_chart(chart_df)
+    
 
 # Show data table
 st.subheader("Democracy Indices (Filtered)")
-st.dataframe(filtered_df[table_columns])
+st.dataframe(filtered_df[["year"] + table_columns].sort_values(["country_name", "year"]))
