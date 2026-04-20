@@ -11,7 +11,7 @@ An interactive Streamlit dashboard for exploring democracy data from the [Variet
 ## Dataset
 This project uses the V-Dem dataset to allow users to visualize differences in democratic components over time and between countries. A short blurb about the V-Dem project is shown below:
 
-> [!NOTE]
+> [!About V-Dem]
 > "The Varieties of Democracy (V-Dem) Research Project takes a comprehensive approach to understanding democratization. This approach encompasses
 > multiple core principles: electoral, liberal, majoritarian, consensual, participatory, deliberative, and egalitarian. Each Principle is represented by
 > a separate index, and each is regarded as a separate outcome in the proposed study. In this manner we reconceptualize democracy from a single outcome
