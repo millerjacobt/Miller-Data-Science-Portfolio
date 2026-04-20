@@ -4,7 +4,7 @@ This portfolio contains end-to-end data science projects completed as part of my
 ## Projects
 
 ### Portfolio Update 1 - Basic Streamlit App
-The goal of this first project was to demonstrate my use of the Streamlit platform by developing a basic data visualization app to be run locally on a user's machine. The app allows users to visualize data from the Varieties of Democracy (VDEM) dataset with the option to select a country of interest and view timeseries data from 5 core indices.
+The goal of this first project was to demonstrate use of the Streamlit platform by developing a basic data visualization app to be run locally on a user's machine. The app allows users to visualize data from the Varieties of Democracy (V-DEM) dataset with the option to select multiple countries of interest and view timeseries data across 5 core indices.
 - [Repository](basic_streamlit_app/)
 
 ### Portfolio Update 2 - Olympic Medals Tidy Data Analysis
