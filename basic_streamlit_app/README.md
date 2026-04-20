@@ -1,22 +1,26 @@
 # V-DEM Core Indices Visualization Tool 
 
-An interactive Streamlit dashboard for exploring democracy data from the [Varieties of Democracy (V-Dem) Dataset](https://www.v-dem.net/). Users can select a country and time range of interest to visualize five core democracy indicies as line graphs with descriptions of each index displayed above its plot.
+An interactive Streamlit dashboard for exploring democracy data from the [Varieties of Democracy (V-Dem) Dataset](https://www.v-dem.net/). Users can select one or multiple countries and a time range of interest, visualize five core democracy indicies (descriptions of each index displayed), and compare the levels of each index over time and between countries.
 
 ## Features
 
-- **Country Selector**: Choose any country included in the dataset from the dropdown menu
+- **Country Selector**: Select any countries included in the dataset from the dropdown menu
 - **Year Range Slider**: Filter the data to a custom time period
-- **5 Core Democracy Indicies**: Each index is displayed as its own labeled line graph with a short description of what it measures
+- **5 Core Democracy Indices**: Each index is displayed as its own labeled line graph with a short description of what it measures
 
 ## Dataset
+This project uses the V-Dem dataset to allow users to visualize differences in democratic components over time and between countries. A short blurb about the V-Dem project is shown below:
 
-"The Varieties of Democracy (V-Dem) Research Project takes a comprehensive approach to understanding democratization. This approach encompasses multiple core principles: electoral, liberal, majoritarian, consensual, participatory, deliberative, and egalitarian. Each Principle is represented by a separate index, and each is regarded as a separate outcome in the proposed study. In this manner we reconceptualize democracy from a single outcome to a set of outcomes.
-
-In addition, we break down each core principle into its constituent components, each to be measured separately. Components include features such as free and fair elections, civil liberties, judicial independence, executive constraints, gender equality, media freedom, and civil society. Finally, each component is disaggregated into specific indicators.
-
-This fundamentally different approach to democratization is made possible by the V-Dem Database, which measures 600+ indicators annually from 1789 to the present for all countries of the world.
-
-The V-Dem approach stands out, first, as a large global collaboration among scholars with diverse areas of expertise; second, as the first project attempting to explain different varieties of democracy; and third, thanks to the highly disaggregated V-Dem data, the first project to explore causal mechanisms linking different aspects of democracy together." - [The V-Dem Institute](https://www.v-dem.net/about/v-dem-project/)
+> [!NOTE]
+> "The Varieties of Democracy (V-Dem) Research Project takes a comprehensive approach to understanding democratization. This approach encompasses
+> multiple core principles: electoral, liberal, majoritarian, consensual, participatory, deliberative, and egalitarian. Each Principle is represented by
+> a separate index, and each is regarded as a separate outcome in the proposed study. In this manner we reconceptualize democracy from a single outcome
+> to a set of outcomes.
+>
+> The V-Dem approach stands out, first, as a large global collaboration among scholars with diverse areas of expertise; second, as the first project
+> attempting to explain different varieties of democracy; and third, thanks to the highly disaggregated V-Dem data, the first project to explore causal
+> mechanisms linking different aspects of democracy together."
+>   - [The V-Dem Institute](https://www.v-dem.net/about/v-dem-project/)
 
 ## Dependencies
 - [Streamlit](https://streamlit.io): Web app framework
