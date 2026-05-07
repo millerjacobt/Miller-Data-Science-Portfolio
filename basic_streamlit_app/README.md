@@ -44,5 +44,9 @@ streamlit run basic_streamlit_app/main.py
 ```
 
 ## About
-
 This project was built as a part of a data science course to demonstrate interactive data visualization using Streamlit and Python. It highlights the use of Pandas for data wrangling and Streamlit for the production of this user friendly data visualization app. 
+
+## Author
+**Jacob Miller**
+University of Notre Dame, Class of 2026
+[GitHub](https://github.com/millerjacobt) | [LinkedIn](https://www.linkedin.com/in/millerjacobt/)
