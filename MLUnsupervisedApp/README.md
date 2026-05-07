@@ -7,7 +7,7 @@ This app allows users to explore three unsupervised machine learning techniques:
 
 ## How to Run Locally
 ### Prerequisites
-- Python 3.8+
+- Python 3.8+ (Miniconda)
 - streamlit
 - pandas
 - numpy
