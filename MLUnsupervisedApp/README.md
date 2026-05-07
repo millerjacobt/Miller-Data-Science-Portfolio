@@ -1,9 +1,9 @@
 # Hidden Structures: An Interactive Unsupervised ML App
 
-This app allows users to explore three unsupervised machine learning techniques: Principal Component Analysis (PCA), K-Means Clustering, and Hierarchical Clustering. Users can upload a CSV or choose from two sample datasets, perform basic preprocessing, select feature variables, and experiment with hyperparameters to discover hidden structure in their data. Visualizations and explanations are provided throughout to help users interpret their results.
+This app allows users to explore three unsupervised machine learning techniques: Principal Component Analysis (PCA), K-Means Clustering, and Hierarchical Clustering. Users can upload a CSV or choose from two sample datasets, perform basic preprocessing, select feature variables, and experiment with hyperparameters to discover hidden structure in their data. As users navigate through the app and try different unsupervised ML techniques, they can utilise the dropdown explainers and the "?" boxes to learn more about the different tools and metrics included.
 
 ## Live App
-[Launch App](https://your-app-url.streamlit.app)
+[Launch App](https://hidden-structures.streamlit.app/)
 
 ## How to Run Locally
 ### Prerequisites
