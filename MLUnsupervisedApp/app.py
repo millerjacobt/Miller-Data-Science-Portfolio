@@ -12,10 +12,10 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 
 
 # Setup Streamlit app title and description
-st.set_page_config(page_title="An Interactive Unsupervised ML App", layout="wide")
+st.set_page_config(page_title="Hidden Structures: An Interactive Unsupervised ML App", layout="wide")
 
-st.title("An Interactive Unsupervised Machine Learning App")
-st.write("This app allows you to explore and apply unsupervised machine learning techniques, including Principal Component Analysis (PCA), K-Means Clustering, and Hierarchical Clustering. You can upload your own dataset or use a sample dataset to experiment with different algorithms and hyperparameters. The app provides visualizations and explanations to help you understand the results of each technique.")
+st.title("Hidden Structures: An Interactive Unsupervised Machine Learning App")
+st.write("This app allows you to explore and apply unsupervised machine learning techniques, including Principal Component Analysis (PCA), K-Means Clustering, and Hierarchical Clustering. You can upload your own dataset or use a sample dataset to experiment with different algorithms and hyperparameters. The app provides visualizations and explanations to help you understand the results of each technique. As you explore, see if you can uncover any interesting **hidden structures** in your data!")
 
 # Create a function to preprocess the future data: Encode categorical values, handle missing values, and drop variables with high cardinality (variables with more than 20 unique values)
 def preprocess_data(df, missing_threshold, fill_method):
