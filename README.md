@@ -4,11 +4,11 @@ This portfolio contains end-to-end data science projects completed as part of my
 ## Projects
 
 ### Portfolio Update 1 - Basic Streamlit App
-The goal of this first project was to demonstrate use of the Streamlit platform by developing a basic data visualization app to be run locally on a user's machine. The app allows users to visualize data from the Varieties of Democracy (V-DEM) dataset with the option to select multiple countries of interest and view timeseries data across 5 core indices.
+An interactive Streamlit dashboard that allows users to explore democracy data from the Varieties of Democracy (V-DEM) dataset. Users can select multiple countries of interest and a custom time range to visualize and compare five core democracy indices over time. This project demonstrates foundational use of the Streamlit platform and Pandas for data filtering and interactive visualization. Building this app introduced me to the Streamlit framework and the process of deploying data-driven web applications.
 - [Repository](basic_streamlit_app/)
 
 ### Portfolio Update 2 - Olympic Medals Tidy Data Analysis
-A Jupyter Notebook project that cleans and transforms the 2008 Olympic medals dataset into tidy format, then generates pivot tables and visualizations analyzing medal counts by sport, gender, and athlete. Demonstrates core data wrangling principles using pandas.
+A Jupyter Notebook project that cleans and transforms the 2008 Olympic medals dataset from wide to tidy format, then generates pivot tables and visualizations analyzing medal counts by sport, gender, and athlete. This project demonstrates core data wrangling principles using Pandas and reinforced my understanding of how data structure affects the ease and clarity of downstream analysis. Building this project deepened my appreciation for tidy data principles as a foundation for reproducible data science work in Python.
 - [Repository](TidyData-Project/)
 
 ### Portfolio Update 3 - Branches or Neighborhoods: An Interactive ML App
